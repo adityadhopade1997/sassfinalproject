@@ -1,0 +1,14 @@
+{
+  "name": "finalminiproject-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.5.1.js",
+  "scripts": {
+    "sass": "node-sass scss/ -o css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

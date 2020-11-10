@@ -1,0 +1,88 @@
+@import "../bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.css";
+/* body {
+    background: url('https://www.strikingly.com/content/static/01860dce6859ba49fd670be737ab09c9/6f021/2019-12-13-background-image-for-website.jpg') fixed;
+   //background-size: cover;
+} */
+/* .mycont{
+    overflow: hidden;
+} */
+/* for inline input box */
+/* .blog{
+    background-color: yellow;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(70, 28, 28);
+}
+label{
+    text-align: left;
+} */
+
+$registration-font-family: Arial, Helvetica, sans-serif;
+$registration-display-property: none;
+$registration-margin-top:-180px;
+
+
+.userProfile {
+	width: 90px;
+	height: 50px;
+	border-radius: 50%;
+	float: right;
+}
+.myReg {
+	display: $registration-display-property;
+	justify-content: center;
+	align-items: center;
+	margin-top: $registration-margin-top;
+}
+.myLog {
+	display: $registration-display-property;
+	margin-top: $registration-margin-top;
+}
+.mydiv {
+	background-color: white;
+	text-align: center;
+	margin: 2em;
+}
+.createblog {
+	display: $registration-display-property;
+	justify-self: end;
+}
+#texteditor {
+display: $registration-display-property;
+}
+form {
+	max-width: 550px;
+	padding: 15px;
+	margin: 0 auto;
+	border-radius: 0.3em;
+	background-color: grey;
+	align-self: center;
+	margin-top: 120px;
+	opacity: 0.8;
+	font-family: $registration-font-family;
+}
+label {
+	font-family: $registration-font-family;
+	font-weight: bold;
+	font-size: medium;
+}
+h2 {
+	text-align: center;
+}
+.hrFrm {
+	display: flex;
+}
+.myprofileDisp {
+	display: $registration-display-property;
+	margin-top: -50px;
+	opacity: 0.9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+@media (max-width:576px) {
+	.hrFrm {
+		flex-direction: column;
+	}
+}
+
+/*** Something to be added ***/

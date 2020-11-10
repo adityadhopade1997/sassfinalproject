@@ -1,0 +1,117 @@
+/*** Footer Starts here ***/
+$footer-common-color1:black;
+$footer-common-color2:white;
+
+@mixin nav-toggle-change { 
+    nav {
+        .toggle-collapse {
+            width: 80% !important;
+        }
+    }
+}
+
+@mixin footer-container-grid {
+    footer.footer {
+		.container {
+			grid-template-columns: repeat(4,1fr);
+		}
+	}
+}
+
+footer.footer {
+	height: 100%;
+	background: rgba(231, 130, 130, 0.2);
+	position: relative;
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		>div {   /*Selects the Immediate Child*/
+			flex-grow: 1;
+			flex-basis: 0;
+			padding: 0.5rem .6rem;
+		}
+		.about-us {
+			h2 {
+				color:$footer-common-color1;
+			}
+		}
+	}
+    .Blog {
+        div {
+            >img {  /* Selects the immediate img child;*/
+                display: inline-block;
+                width: 25%;
+                height: 40%;
+                margin: .3rem .4rem;
+            }
+        }
+        .rights {
+            justify-content: center;
+            font-family:Arial, Helvetica, sans-serif; 
+            h4 {
+                a {
+                    color:$footer-common-color1;
+                }              
+            }
+        }
+        .move-up {
+            position: absolute;
+            right:6%;
+            top:50%;
+            span {
+                color:$footer-common-color1;
+                .hover{ /* &:hover represents the same meaning */
+                    color:$footer-common-color2;
+                    cursor:pointer;
+                }
+            }
+        }
+     }
+
+}
+@media only screen and (max-width: 1130px) {
+   @include footer-container-grid;
+}
+@media only screen and (max-width: 750px) {
+    @include  nav-toggle-change;
+    .nav {
+        .nav-menu {
+			flex-direction: column;
+		}
+		.nav-items {
+			flex-direction: column;
+		}
+    }
+    main {
+		.site-content {
+			grid-template-columns: 100%;
+		}
+    }
+    @include footer-container-grid;
+}
+
+@media only screen and (max-width: 520px) {
+    @include nav-toggle-change;
+    main {
+		.blog {
+			height: 125vh;
+		}
+	}
+	footer.footer {
+		.container {
+			>div {
+				padding: 1rem 0.9rem !important;
+			}
+			grid-template-columns: repeat(1,1fr);
+		}
+    }
+    
+    footer {
+        .rights {
+            padding: 0 1.4rem;
+			text-align: center;
+        }
+    }
+}
+
+/*** Footer Ends here ***/

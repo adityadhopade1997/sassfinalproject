@@ -1,0 +1,27 @@
+/*** Site title starts here ***/
+@mixin site-title-margin{
+    margin:0.3rem;
+}
+
+main {
+	.site-title {
+		background: url(../assets/travel/blogger.jpg);
+		background-size: cover;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		.site-background {
+			padding-top: 10rem;
+			text-align: center;
+			color: black;
+		}
+		h1 {
+			@include site-title-margin;
+		}
+	}
+}
+h2 {
+	@include site-title-margin;
+}
+
+/***site title ends here ***/

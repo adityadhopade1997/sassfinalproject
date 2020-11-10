@@ -1,0 +1,35 @@
+/*** Grid Carousal Starts here ***/
+$car-init-margin:5px;
+.carousel-item {
+	height: 35rem;
+	background-color: silver;
+	margin: $car-init-margin;
+	background-color: rgba(231, 130, 130, 0.2);
+}
+.arrange {
+	border: solid black;
+	border-radius: 5px;
+	height: 15rem;
+	margin: $car-init-margin;
+	padding: 5px;
+}
+.word-wrap {
+	word-wrap: break-word;
+}
+@media (width:780px) {
+	.arrange {
+		height: 20rem;
+	}
+	.carousel-item {
+		height: 45rem;
+	}
+}
+@media (width:300px) {
+	.arrange {
+		height: 30rem;
+	}
+	.carousel-item {
+		height: 60rem;
+	}
+}
+/*** Grid Carousal Starts here ***/

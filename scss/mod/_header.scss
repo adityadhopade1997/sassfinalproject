@@ -1,0 +1,65 @@
+/* The Actual Name is navbar in the CSS*/
+
+$initial-block-display: flex; /* initial display block is flex */
+
+.nav {
+    background: white;
+    padding: 0 2 rem;
+    height: 0 rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    .nav-menu {
+        justify-content: space-between;
+    }
+    .toggle-collapse {
+        position: absolute;
+		top: 0%;
+		width: 80%;
+		cursor: pointer;
+		display: none;
+		.toggle-icons { 
+			display: $initial-block-display;
+			justify-content: flex-end;
+            padding: 1.7rem 0;
+        }    
+    }
+    .nav-items {
+		display: $initial-block-display;
+		margin: 0;
+		.nav-link {
+			padding: 1.6rem 1rem;
+			font-size: 1.1rem;
+			position: relative;
+			&:hover { /* Parent is nav-link on hover it does*/
+				background-color: var(--mid);
+				a {
+					color: darken($color: #000000, $amount: 0);
+				}
+			}
+		}
+    }
+    .nav-brand {
+		a {
+			font-size: 1.6rem;
+			padding: 1rem 0;
+			display: block;
+			font-family: Arial, Helvetica, sans-serif;			
+		}
+    }
+    .social {
+		padding: 1.4rem 0;
+		i {
+			padding: 0.2rem;
+			&:hover {
+				color: whitesmoke;
+			}
+		}
+	}
+    
+}
+.collapse {
+	height: 20rem;
+}
+
+/*** Navbar ends here ***/

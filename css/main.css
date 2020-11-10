@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/*** Home Page Scss here ***/
+/*** Footer Starts here ***/
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic";
+/* @import url(../bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.css); */
+footer.footer {
+  height: 100%;
+  background: rgba(231, 130, 130, 0.2);
+  position: relative; }
+  footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    footer.footer .container > div {
+      /*Selects the Immediate Child*/
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 0.5rem .6rem; }
+    footer.footer .container .about-us h2 {
+      color: black; }
+  footer.footer .Blog div > img {
+    /* Selects the immediate img child;*/
+    display: inline-block;
+    width: 25%;
+    height: 40%;
+    margin: .3rem .4rem; }
+  footer.footer .Blog .rights {
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; }
+    footer.footer .Blog .rights h4 a {
+      color: black; }
+  footer.footer .Blog .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%; }
+    footer.footer .Blog .move-up span {
+      color: black; }
+      footer.footer .Blog .move-up span .hover {
+        /* &:hover represents the same meaning */
+        color: white;
+        cursor: pointer; }
+
+@media only screen and (max-width: 1130px) {
+  footer.footer .container {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (max-width: 750px) {
+  nav .toggle-collapse {
+    width: 80% !important; }
+  .nav .nav-menu {
+    flex-direction: column; }
+  .nav .nav-items {
+    flex-direction: column; }
+  main .site-content {
+    grid-template-columns: 100%; }
+  footer.footer .container {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (max-width: 520px) {
+  nav .toggle-collapse {
+    width: 80% !important; }
+  main .blog {
+    height: 125vh; }
+  footer.footer .container {
+    grid-template-columns: repeat(1, 1fr); }
+    footer.footer .container > div {
+      padding: 1rem 0.9rem !important; }
+  footer .rights {
+    padding: 0 1.4rem;
+    text-align: center; } }
+
+/*** Footer Ends here ***/
+/* The Actual Name is navbar in the CSS*/
+/* initial display block is flex */
+.nav {
+  background: white;
+  padding: 0 2 rem;
+  height: 0 rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out; }
+  .nav .nav-menu {
+    justify-content: space-between; }
+  .nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+    display: none; }
+    .nav .toggle-collapse .toggle-icons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.7rem 0; }
+  .nav .nav-items {
+    display: flex;
+    margin: 0; }
+    .nav .nav-items .nav-link {
+      padding: 1.6rem 1rem;
+      font-size: 1.1rem;
+      position: relative; }
+      .nav .nav-items .nav-link:hover {
+        /* Parent is nav-link on hover it does*/
+        background-color: var(--mid); }
+        .nav .nav-items .nav-link:hover a {
+          color: black; }
+  .nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif; }
+  .nav .social {
+    padding: 1.4rem 0; }
+    .nav .social i {
+      padding: 0.2rem; }
+      .nav .social i:hover {
+        color: whitesmoke; }
+
+.collapse {
+  height: 20rem; }
+
+/*** Navbar ends here ***/
+/*** Site title starts here ***/
+main .site-title {
+  background: url(../assets/travel/blogger.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
+  main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: black; }
+  main .site-title h1 {
+    margin: 0.3rem; }
+
+h2 {
+  margin: 0.3rem; }
+
+/***site title ends here ***/
+/*** all the global classess ***/
+a {
+  text-decoration: none;
+  color: var(--text-grey); }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem; }
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
+
+.container {
+  margin: 0.5vw; }
+
+button.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  background-color: rgba(231, 130, 130, 0.2); }
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightslategray; }
+
+/*** all the global classes were included now ***/
+/*** Blog Carousal 1 Starts here ***/
+main .blog .blog-post {
+  padding-top: 6rem; }
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(235, 8, 8, 0.2); }
+
+main .blog-content .blog-title {
+  padding: 2rem 0; }
+
+/*** Blog Carousal 1 Ends here ***/
+/*** Blog Carousal 2 Starts here ***/
+.container .site-content {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 50%;
+  margin: 5rem 7rem;
+  box-shadow: 0 15px 20px rgba(6, 44, 116, 0.2);
+  border: 2px solid #f5bfbf;
+  padding: 2rem 0; }
+
+/*** Blog Carousal 2 Ends here ***/
+/*** Profile Page  here ***/
+/***    Profile Page Starts Here    ***/
+/* For mobile phones: */
+h1 {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; }
+
+.fb-profile img.fb-image-lg {
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 300px; }
+
+.fb-image-profile {
+  margin: -90px 10px 0px 50px;
+  z-index: 9;
+  width: 20%; }
+
+body {
+  background: linen;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+
+.post {
+  max-width: 800px;
+  margin: 10px auto; }
+
+.text-center {
+  text-align: center; }
+
+.quote-card {
+  background: lightgray;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px; }
+  .quote-card p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 80%; }
+  .quote-card:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    color: rgba(238, 238, 238, 0.8);
+    font-weight: normal;
+    content: "“";
+    top: 10px;
+    left: 10px;
+    font-size: 5em; }
+  .quote-card:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    color: rgba(238, 238, 238, 0.8);
+    font-weight: normal;
+    content: "”";
+    bottom: -110px;
+    line-height: 100px;
+    right: -32px;
+    font-size: 25em; }
+
+.column-layout {
+  background-color: whitesmoke;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  display: flex;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  font-family: sans-serif; }
+
+.info-column {
+  float: left;
+  flex: 1;
+  order: 1;
+  padding: 20px;
+  font-weight: bold;
+  width: 30%; }
+
+.post-column {
+  float: left;
+  flex: 2;
+  order: 2;
+  width: 70%; }
+
+@media (max-width: 768px) {
+  .fb-profile-text > h1 {
+    font-weight: 700;
+    font-size: 16px; }
+  .fb-image-profile {
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; } }
+
+@media (max-width: 640px) {
+  .quote-card:after {
+    font-size: 10em;
+    right: -25px; } }
+
+@media only screen and (max-width: 1130px) {
+  .post-column {
+    grid-template-columns: repeat(4, 1fr); }
+  .info-column {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (max-width: 750px) {
+  .post-column {
+    grid-template-columns: repeat(2, 1fr); }
+  .info-column {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (max-width: 520px) {
+  div.column-layout.post-column {
+    grid-template-columns: repeat(2, 1fr); }
+  div.column-layout.info-column {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (max-width: 620px) {
+  .post-column {
+    width: 100%; }
+  .info-column {
+    width: 100%; } }
+
+/***    Profile Page Ends Here    ***/
+/*** Registration Page here  ***/
+/* body {
+    background: url('https://www.strikingly.com/content/static/01860dce6859ba49fd670be737ab09c9/6f021/2019-12-13-background-image-for-website.jpg') fixed;
+   //background-size: cover;
+} */
+/* .mycont{
+    overflow: hidden;
+} */
+/* for inline input box */
+/* .blog{
+    background-color: yellow;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(70, 28, 28);
+}
+label{
+    text-align: left;
+} */
+.userProfile {
+  width: 90px;
+  height: 50px;
+  border-radius: 50%;
+  float: right; }
+
+.myReg {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: -180px; }
+
+.myLog {
+  display: none;
+  margin-top: -180px; }
+
+.mydiv {
+  background-color: white;
+  text-align: center;
+  margin: 2em; }
+
+.createblog {
+  display: none;
+  justify-self: end; }
+
+#texteditor {
+  display: none; }
+
+form {
+  max-width: 550px;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 0.3em;
+  background-color: grey;
+  align-self: center;
+  margin-top: 120px;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif; }
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium; }
+
+h2 {
+  text-align: center; }
+
+.hrFrm {
+  display: flex; }
+
+.myprofileDisp {
+  display: none;
+  margin-top: -50px;
+  opacity: 0.9;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+@media (max-width: 576px) {
+  .hrFrm {
+    flex-direction: column; } }
+
+/*** Something to be added ***/
+/*** Index.html ***/
+#newwindow {
+  text-align: center; }
+
+/*** Index.html ***/
+/*** Grid Carousal Starts here ***/
+.carousel-item {
+  height: 35rem;
+  background-color: silver;
+  margin: 5px;
+  background-color: rgba(231, 130, 130, 0.2); }
+
+.arrange {
+  border: solid black;
+  border-radius: 5px;
+  height: 15rem;
+  margin: 5px;
+  padding: 5px; }
+
+.word-wrap {
+  word-wrap: break-word; }
+
+@media (width: 780px) {
+  .arrange {
+    height: 20rem; }
+  .carousel-item {
+    height: 45rem; } }
+
+@media (width: 300px) {
+  .arrange {
+    height: 30rem; }
+  .carousel-item {
+    height: 60rem; } }
+
+/*** Grid Carousal Starts here ***/
